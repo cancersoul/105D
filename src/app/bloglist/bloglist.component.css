@@ -1,0 +1,21 @@
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Increased from 1rem to 2rem for better spacing */
+    justify-content: center;
+    padding: 1rem;
+}
+
+.blog-grid app-blog-card {
+    flex: 0 0 calc(50% - 1rem); /* Two columns with gap accounted */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive: 1 column on smaller screens */
+@media (max-width: 768px) {
+    .blog-grid app-blog-card {
+        flex: 0 0 100%;
+    }
+}

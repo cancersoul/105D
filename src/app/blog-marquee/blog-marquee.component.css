@@ -1,0 +1,36 @@
+.marquee-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 2rem 1rem; /* Increased vertical padding & added horizontal padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.marquee-content {
+    display: inline-flex;
+    animation: marquee-scroll 30s linear infinite;
+    align-items: center; /* Center cards vertically if needed */
+    gap: 1.5rem; /* Cleaner way to add gap between cards */
+}
+
+.marquee-content app-blog-card {
+    flex: 0 0 auto;
+    min-width: 300px;
+    /* No need for margin-right when using gap */
+}
+
+/* Optional: Add a max-width limit to prevent super-wide cards */
+@media (min-width: 1200px) {
+    .marquee-content app-blog-card {
+        min-width: 350px;
+    }
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

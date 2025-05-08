@@ -1,0 +1,94 @@
+.blog-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%; /* Ensure it fills container */
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 0; /* Removed bottom margin to rely on grid gap */
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.date-box {
+    position: absolute;
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 8px;
+    top: 20px;
+    left: 20px;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.date-box .month {
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.date-box .day {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.date-box .year {
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 2px;
+}
+
+.blog-image {
+    width: 100%;
+    height: 250px; /* Increased height for a stronger image presence */
+    background-image: url('assets/DSC07172.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-content {
+    padding: 2rem;
+}
+
+.blog-content h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: #222;
+}
+
+.meta {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 1.25rem;
+}
+
+.blog-content p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+
+  <div class="blog-grid">
+    <app-blogcard
+      *ngFor="let post of blogPosts"
+      [image]="post.image"
+      [title]="post.title"
+      [meta]="post.meta"
+      [excerpt]="post.excerpt"
+      [date]="post.date"
+    ></app-blogcard>
+  </div>
+  

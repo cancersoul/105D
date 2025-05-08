@@ -1,0 +1,14 @@
+<div class="marquee-wrapper">
+    <div class="marquee-content">
+      <ng-container *ngFor="let post of posts.concat(posts)">
+        <app-blogcard
+          [image]="post.image"
+          [title]="post.title"
+          [meta]="post.meta"
+          [excerpt]="post.excerpt"
+          [date]="post.date"
+        ></app-blogcard>
+      </ng-container>
+    </div>
+  </div>
+  
